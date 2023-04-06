@@ -1,0 +1,327 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+
+<html lang="en">
+  <head>
+        <title>IzyAcad</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+	
+  </head>
+  <body>
+		
+        <div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i> <span class="sr-only">Toggle Menu</span>
+                    </button>
+                </div>
+                <div class="p-2 pt-2">
+                    <h1><a href="{{path('app_admin')}}" class="logo">InproAcad</a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <li class="active">
+                            <a href="{{path('app_admin')}}">Tableau de Board</a>
+                        </li>
+                        <li>
+                            {# <a href="{{path('app_formations')}}">Formations</a> #}
+                            <a href="#">Formations</a>
+                        </li>
+                        <li>
+                            {# <a href="{{path('app_apprenants')}}">Apprenants</a> #}
+                            <a href="#">Apprenants</a>
+                        </li>
+                        <li>
+                            {# <a href="{{path('app_mentores')}}">Mentores</a> #}
+                            <a href="#">Mentores</a>
+                        </li>
+                        <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    {# <a href="{{path('app_page1')}}">Page 1</a> #}
+                                    <a href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    {# <a href="{{path('app_page2')}}">Page 2</a> #}
+                                    <a href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    {# <a href="{{path('app_page3')}}">Page 3</a> #}
+                                    <a href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    {# <div class="footer">
+                        <p>
+                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | InProcess
+                        </p>
+                    </div> #}
+
+                </div>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content" class="p-4 p-md-5 pt-5">
+                <h2>Apprenants</h2>
+                <!-- <hr> -->
+                <table class="table table-sm table-striped">
+                    <thead>
+                        <th>Prénom & Nom</th>
+                        <th>Téléphone</th>
+                        <th>E-mail</th>
+                        <th>Cohorte</th>
+                        <th>Formation</th>
+                        <th>Action</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S. Fallou NDIAYE</td>
+                            <td>+221 772893496</td>
+                            <td>fallou@exemple.com</td>
+                            <td>C1DEV</td>
+                            <td>DEV WEB</td>
+                            <td>
+                                <div class="d-flex">
+                                    <button class="btn btn-sm btn-secondary m-1">View</button>
+                                    <button class="btn btn-sm btn-warning m-1">Edit</button>
+                                    <button class="btn btn-sm btn-danger m-1">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+<div class="example-wrapper">
+    <h1>Hello {{ app.user.email }}</h1>
+    <a href="{{path('app_logout')}}">Logout</a>
+</div>
+{% endblock %}
